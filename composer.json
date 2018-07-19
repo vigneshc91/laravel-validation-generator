@@ -1,0 +1,26 @@
+{
+    "name": "vigneshc91/laravel-validation-generator",
+    "description": "Laravel package for generating validation automatically",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vignesh C",
+            "email": "vignesh.jag@gmail.com"
+        }
+    ],
+    "require": {
+        "doctrine/dbal": "^2.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vigneshc91\\LaravelValidationGenerator\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vigneshc91\\LaravelValidationGenerator\\LaravelValidationGeneratorServiceProvider"
+            ]
+        }
+    }
+}
