@@ -31,7 +31,7 @@ class Generator
      */
     public function generate()
     {
-        $this->getAllTables();
+        return $this->getAllTables();
     }
 
     /**
@@ -58,7 +58,7 @@ class Generator
                 $this->rules[$key][$index] = implode('|', $item);
             }
         }
-        print_r($this->rules);
+        return $this->rules;
     }
 
     /**
@@ -80,6 +80,8 @@ class Generator
         if(in_array($tableName, $this->options['ignore_tables'])) {
             return 0;
         }
+
+        $tableName = str_singular($tableName);
 
         # Get the rules for all the columns
         foreach($columns as $column) {

@@ -46,6 +46,7 @@ class ValidationGenerator extends Command
             'ignore_columns' => $this->option('ignore-columns') ? explode(',', $this->option('ignore-columns')) : []
         ];
         $generator = new Generator($options);
-        $generator->generate();
+        $rules = $generator->generate();
+        $this->line(json_encode($rules, JSON_PRETTY_PRINT));
     }
 }
