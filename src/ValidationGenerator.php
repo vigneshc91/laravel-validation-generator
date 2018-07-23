@@ -50,7 +50,7 @@ class ValidationGenerator extends Command
         ];
         $generator = new Generator($options);
         $rules = $generator->generate();
-        
+
         $formatterOptions = [
             'suffix' => $this->option('suffix') ? $this->option('suffix') : 'CreateUpdate',
             'directory' => $this->option('dir') ? $this->option('dir') : '',

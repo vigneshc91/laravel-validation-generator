@@ -22,6 +22,7 @@ class Generator
     {
         $this->schemaManager = DB::connection()->getDoctrineSchemaManager();
         $this->options = $options;
+        $this->rules = [];
     }
 
     /**
