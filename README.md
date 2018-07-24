@@ -4,7 +4,7 @@ Automatically add the validations for tables in the database
 
 ## Installation
 
-The package can easily be installed by running `composer require vigneshc91/laravel-valdation-generator` in your project's root folder.
+The package can easily be installed by running `composer require vigneshc91/laravel-validation-generator` in your project's root folder.
 
 If you are running a version of Laravel < 5.5 also make sure you add `Vigneshc91\LaravelValidationGenerator\ValidationGeneratorServiceProvider::class` to the `providers` array in `config/app.php`.
 
