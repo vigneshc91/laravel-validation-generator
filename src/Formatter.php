@@ -63,9 +63,9 @@ class Formatter
      */
     protected function handleFileFormat()
     {
-        $lines = file($this->file, FILE_IGNORE_NEW_LINES);
-        $lines[2] = $this->namespace;
         foreach ($this->rules as $key => $value) {
+            $lines = file($this->file, FILE_IGNORE_NEW_LINES);
+            $lines[2] = $this->namespace;
             $lines[6] = $this->getClassName($key, $lines[6]);
             $rule = $this->getFormattedRule($lines, $value);
             $this->writeToFile($key, $rule);
