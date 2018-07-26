@@ -66,7 +66,7 @@ class Formatter
         $lines = file($this->file, FILE_IGNORE_NEW_LINES);
         $lines[2] = $this->namespace;
         foreach ($this->rules as $key => $value) {
-            $lines[6] = $this->getClassName($key, $line[6]);
+            $lines[6] = $this->getClassName($key, $lines[6]);
             $rule = $this->getFormattedRule($lines, $value);
             $this->writeToFile($key, $rule);
         }
