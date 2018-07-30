@@ -115,6 +115,7 @@ class Formatter
     /**
      * Write the string into the file
      *
+     * @param string $table
      * @param string $rule
      * @return void
      */
