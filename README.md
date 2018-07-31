@@ -13,7 +13,7 @@ This will register the artisan command that will be available to you.
 
 ## Usage
 
-Generating the swagger documentation is easy, simply run `php artisan laravel-swagger:generate` in your project root. Keep in mind the command will simply print out the output in your console. If you want the docs saved in a file you can reroute the output like so: `php artisan laravel-validation:generate`
+Generating the validation is easy, simply run `php artisan laravel-validation:generate` in your project root. This will create a request file and save it in the requests directory.
 
 If you wish to generate validation only for specific tables, you can pass a table using --tables, for example `php artisan laravel-validation:generate --tables='users,addresses'`
 
